@@ -15,3 +15,24 @@ This is already standard, the program is made on `AndroidStudio` and it is not c
 
 <h1 align="center">Important code moments</h1> 
 
+```
+private String readRawTextFile(Context context, int resId) {
+        InputStream inpStr = context.getResources().openRawResource(resId);
+        InputStreamReader inpRead = new InputStreamReader(inpStr);
+        BufferedReader buffRead = new BufferedReader((inpRead));
+        String line;
+        StringBuilder bulder = new StringBuilder();
+
+        try {
+            while ((line = buffRead.readLine()) != null){
+                bulder.append(line);
+                bulder.append("<br>");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return bulder.toString();
+    }
+```
+
+This function is needed in order to read the text and display it on the screen
