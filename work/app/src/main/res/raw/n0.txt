@@ -1,0 +1,10 @@
+3D Modeler
+Texture artist
+Rigger
+Animator
+VFX Artist
+3D Generalist
+Visualizer
+Environment Artist
+Character Artist
+Hard surface Artist
